@@ -1,0 +1,217 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #9b9b9b;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 300px;
+
+            background: #FFFFFF;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            height: 1000px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #9b9b9b;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Bienvenidos Pasteleros <img src="Imagenes\Logo\Logo.png" width="200" height="150"></h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Sabores</a></li>
+                <li><a href="#">Adornos</a></li>
+                <li><a href="#Formulario.html">Pedidos</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Sabores <img src="Imagenes\Iconos\Sabores.png" height="70" width="70"></h1>
+            <table border="1" align="center">
+              <tr>
+                <td><strong>SABOR</strong></td>
+                <td><strong>Cantidad</strong></td>
+                <td><strong>Restante</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Chocolate</strong></td>
+                <td>500</td>
+                <td><strong>400</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Fresa</strong></td>
+                <td>400</td>
+                <td><strong>375</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Coco</strong></td>
+                <td>400</td>
+                <td><strong>380</strong></td>
+              </tr>
+              <tr>
+                <td><strong>vainilla</strong></td>
+                <td>400</td>
+                <td><strong>380</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Tres Leches</strong></td>
+                <td>400</td>
+                <td><strong>100</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Cafe</strong></td>
+                <td>100</td>
+                <td><strong>0</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Oreo</strong></td>
+                <td>400</td>
+                <td><strong>200</strong></td>
+              </tr>
+            </table>
+
+            <h1>Decoraciones <img src="Imagenes\Iconos\Velas.png" height="70" width="70"></h1>
+            <table border="1" align="center">
+              <tr>
+                <td><strong>Decoracion</strong></td>
+                <td><strong>Cantidad</strong></td>
+                <td><strong>Restante</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Velitas</strong></td>
+                <td>500</td>
+                <td><strong>100</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Velas letras</strong></td>
+                <td>400</td>
+                <td><strong>375</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Velas de bengala</strong></td>
+                <td>400</td>
+                <td><strong>380</strong></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <h1>Pedidos  <img src="Imagenes\Iconos\Formulario.png" height="80" width="70"></h1>
+            <br>
+            <table border="1" align="center">
+              <tr>
+                <td><strong>ID de pedido</strong></td>
+                <td><strong>Nombre</strong></td>
+                <td><strong>correo</strong></td>
+                <td><strong>Telefono</strong></td>
+                <td><strong>Tamaño</strong></td>
+                <td><strong>Sabor</strong></td>
+                <td><strong>Fecha y hora</strong></td>
+                <td><strong>Nombre decorado</strong></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+        </article>
+    </section>
+</body>
+
+</html>

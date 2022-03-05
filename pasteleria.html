@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria La Perla</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #f08484;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 300px;
+
+            background: #FFFFFF;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            height: 2500px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #f08484;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Bienvenidos <img src="Imagenes\Logo\Logo.png" width="200" height="150"></h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Pasteles</a></li>
+                <li><a href="#">Adornos</a></li>
+                <li><a href="#Formulario.html">Haz Tu Pedido Aqui</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Pasteles <img src="Imagenes\Iconos\Pastel.png" height="70" width="70"></h1>
+            <table align="center">
+              <tr>
+                <td><strong>Pastel de uva</strong></td>
+                <td><strong><img style="border: 1px solid; color: #f08484;" src="Imagenes\Pasteles\Pastel1.jpg" height="200" width="200"></strong></td>
+                <td><strong>$400 MX</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Pastelde Fresa</strong></td>
+                <td><img style="border: 1px solid; color: #f08484;" src="Imagenes\Pasteles\Pastel2.jpg" height="200" width="200"></td>
+                <td><strong>$450 MX</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Pastel Come Galleta</strong></td>
+                <td><img style="border: 1px solid; color: #f08484;" src="Imagenes\Pasteles\Pastel3.jpg" height="200" width="200"></td></td>
+                <td><strong>$600 MX</strong></td>
+              </tr>
+            </table>
+
+            <h1>Decoraciones <img src="Imagenes\Iconos\Velas.png" height="70" width="70"></h1>
+            <table align="center">
+              <tr>
+                <td><strong>Velitas</strong></td>
+                <td><strong><img style="border: 1px solid; color: #f08484;" src="Imagenes\Decoraciones\Velitas.jpg" height="200" width="200"></strong></td>
+                <td><strong>$50 MX Paquete de 12</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Velas con letras</strong></td>
+                <td><img style="border: 1px solid; color: #f08484;" src="Imagenes\Decoraciones\VelasLetras.jpg" height="200" width="200"></td>
+                <td><strong>$75 MX C/U</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>Velas De Bengala</strong></td>
+                <td><img style="border: 1px solid; color: #f08484;" src="Imagenes\Decoraciones\VelasBengala.jpg" height="200" width="200"></td></td>
+                <td><strong>$100 MX C/U</strong></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <h1>Pide tu Pastel a tu gusto aqui  <img src="Imagenes\Iconos\Formulario.png" height="80" width="70"></h1>
+            <br>
+            <br>
+            <label for="Input1">Nombre:</label>
+            <input type="text" id="Input1" name="Input1"><br><br>
+            <label for="correo1">Correo:</label>
+            <input type="email" id="correo1" name="correo1"><br><br>
+            <label for="tel1">Teléfono</label>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+            <h2>Seleccione niveles del pastel</h2><br>
+            <input type="radio" id="nivel" name="piso" value="1">
+            <label for="1">1</label><br>
+            <input type="radio" id="2" name="piso" value="2">
+            <label for="2">2</label><br>
+            <input type="radio" id="3" name="piso" value="3">
+            <label for="3">3</label><br>
+            <input type="radio" id="4" name="piso" value="4">
+            <label for="4">4</label><br>
+            <h2>Seleccione sabores del pastel</h2><br>
+            <input type="checkbox" id="sabor" name="sabor1" value="Chocolate">
+            <label for="sabor1">Chocolate</label><br>
+            <input type="checkbox" id="sabor2" name="sabor2" value="fresa">
+            <label for="sabor2">Fresa</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="coco">
+            <label for="sabor3">coco</label><br>
+            <input type="checkbox" id="sabor4" name="sabor4" value="3leches">
+            <label for="sabor4">3 Leches</label><br>
+            <input type="checkbox" id="sabor5" name="sabor5" value="vainilla">
+            <label for="sabor5">Vainilla</label><br>
+            <input type="checkbox" id="sabor6" name="sabor6" value="cafe">
+            <label for="sabor6">cafe</label><br>
+            <input type="checkbox" id="sabor7" name="sabor7" value="oreo">
+            <label for="sabor7">oreo</label><br>
+            <h2>Fecha y hora del evento</h2><br>
+            <input type="datetime-local" id="fecha2" name="fecha2"><br><br>
+            <label for="Input1"> Nombre del Festejado</label><br>
+            <input type="text" id="Input1" name="Input1"><br><br><br>
+            <input type="button" id="boton1" name="Enviar" value="Enviar" onclick="alert('Solicitud enviada, nos podremos en contacto en breve');"><br><br>
+        </article>
+    </section>
+
+    <footer>
+        <img src="Imagenes\Iconos\Facebook.png" height="70" width="70">
+        <img src="Imagenes\Iconos\Instagram.png" height="70" width="70">
+        <img src="Imagenes\Iconos\Whatsapp.png" height="70" width="70">
+        <br>
+        <p>Calle del pastel #400 colonia Reposteria</p>
+        <p>9999999999</p>
+        <p>Lunes a domingo 10:00 am a 8:00 Pm</p>
+    </footer>
+
+</body>
+
+</html>
